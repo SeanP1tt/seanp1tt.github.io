@@ -34,12 +34,13 @@ body{
 }
 .container {
   float: right;
-  height: 800px;
+  height: 600px;
   width: 80%;
 }
 #home {
   background-image: url("https://i2.wp.com/ontariofamilycourt.ca/wp-content/uploads/2017/09/Website-Design-Background-MOBO-Media-Web-Design.png?ssl=1");
   background-size: cover;
+  height: 700px;
 }
 
 .description {
@@ -75,17 +76,39 @@ text-decoration: none;
   width: 70%;
   margin: 10% 12%;
 }
-
 .circle{
   border: 1px solid white;
 border-radius: 100%;
-width: 7%;
+width: 28%;
 background-color: dodgerblue;
+margin: 0 auto;
+margin-top: 20%;
+}
+.square {
+  border: 1px solid grey;
+  margin-top: -10%;
+  text-align: center;
+  box-shadow: 1px 1px lightgrey;
 }
 .cap {
   font-size: 48px;
+  color: white;
+padding-left: 19%;
+}
+.truck {
+  font-size: 48px;
 color: white;
-padding-left: 13%;
+padding-left: 5%;
+}
+.desktop {
+  font-size: 48px;
+color: white;
+padding-left: 10%;
+}
+.bot {
+  font-size: 48px;
+color: white;
+padding-left: 7%;
 }
 
 /* .bar {
