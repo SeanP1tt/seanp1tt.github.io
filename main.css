@@ -83,12 +83,18 @@ width: 28%;
 margin: 0 auto;
 margin-top: 20%;
 }
+
+.rect {
+  padding-top: .01%;
+  text-align: center;
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  margin-top: 2%;
+}
 .square {
   /* border: 1px solid grey; */
   margin-top: -10%;
   padding-top: 8%;
-  text-align: center;
-  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+
 }
 
 .square p {
@@ -122,52 +128,57 @@ padding-left: 7%;
   background-color: #BF211E;
 }
 .truck {
-  background-color: #F9DC5C;
+  background-color: gold;
 }
 .desktop {
   background-color: #4472CA;
 }
 .bot {
-  background-color: #77BA99;
+  background-color: #5cb85c;
 }
-.one .square {
+.one .rect,.square {
 border-bottom: 2px solid #BF211E;
 }
-.two .square {
-border-bottom: 2px solid #F9DC5C;
+.two .rect,.square {
+border-bottom: 2px solid gold;
 }
-.three .square {
+.three .rect,.square {
 border-bottom: 2px solid #4472CA;
 }
-.four .square {
-border-bottom: 2px solid #77BA99;
+.four .rect,.square {
+border-bottom: 2px solid #5cb85c;
 }
-.five .square {
-border-bottom: 2px solid #BF211E;
+.five .rect,.square {
+border-bottom: 2px solid darkorange;
 }
-.six .square {
-border-bottom: 2px solid #BF211E;
+.six .rect,.square {
+border-bottom: 2px solid peru;
 }
 #color1 {
-      background-color: #5cb85c;
+      background-color: #BF211E;
 }
 #color2 {
-      background-color: peru;
-}
-#color3 {
       background-color: gold;
 }
+#color3 {
+      background-color: #4472CA;
+}
 #color4 {
-      background-color: cornflowerblue;
+      background-color: #5cb85c;
 }
 #color5 {
-      background-color: indianred;
-}
-#color6 {
       background-color: darkorange;
 }
+#color6 {
+      background-color: peru;
+}
 
-
+#resume{
+height: 800px;
+}
+#contact {
+  margin-top: 10%;
+}
 /* .bar {
   width: 40%;
   height: 10%;
