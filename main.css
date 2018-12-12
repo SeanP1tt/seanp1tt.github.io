@@ -94,7 +94,7 @@ margin-top: 20%;
   /* border: 1px solid grey; */
   margin-top: -10%;
   padding-top: 8%;
-
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
 }
 
 .square p {
@@ -123,6 +123,16 @@ padding-left: 10%;
 color: white;
 padding-left: 7%;
 }
+.code span{
+  font-size: 48px;
+color: white;
+padding-left: 23%;
+}
+.globe span{
+  font-size: 48px;
+color: white;
+padding-left: 15%;
+}
 
 .cap {
   background-color: #BF211E;
@@ -136,22 +146,28 @@ padding-left: 7%;
 .bot {
   background-color: #5cb85c;
 }
-.one .rect,.square {
+.code {
+  background-color: darkorange;
+}
+.globe {
+  background-color: peru;
+}
+.one .square , .one .rect {
 border-bottom: 2px solid #BF211E;
 }
-.two .rect,.square {
+.two .square , .two .rect {
 border-bottom: 2px solid gold;
 }
-.three .rect,.square {
+.three .square , .three .rect {
 border-bottom: 2px solid #4472CA;
 }
-.four .rect,.square {
+.four .rect , .four .square {
 border-bottom: 2px solid #5cb85c;
 }
-.five .rect,.square {
+.five .rect, .five .square {
 border-bottom: 2px solid darkorange;
 }
-.six .rect,.square {
+.six .rect , .six .square {
 border-bottom: 2px solid peru;
 }
 #color1 {
