@@ -1,32 +1,20 @@
-$(document).ready(() => {//comnvert to scroll function
-  //body.scroll
-  //find the current container div
-$('.container').hover(() => {
-  let $id =  '#' + $(event.currentTarget).attr('id');
-   $(".nav a").each(function() {
-     if($(this).attr('href') == $id){
-       $(this).addClass('activeMenuItem')
-     }
-   })
-},
-() => {
-  let $id = '#' + $(event.currentTarget).attr('id');
-  $(".nav a").each(function(i, v) {
-    // console.log($(this).attr('href'));
-    // console.log('id = ' + $id);
-    if($(this).attr('href') == $id){
-      console.log("found the id");
-      $(this).removeClass('activeMenuItem')
+$(document).ready(() => {
+//highlight nav element on scroll
+var sections = $('.container'),
+ nav = $('.nav');
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+
+  sections.each(function() {
+    var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('activeMenuItem');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('activeMenuItem');
     }
   })
 })
-$(window).on('scroll', () => {
-  console.log($(this).attr('id'));
-})
 
-$(".nav a").each(function() {
-    if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
-        $(this).addClass('activeMenuItem');
-    }
-});
 });

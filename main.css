@@ -16,6 +16,7 @@ body{
 .nav a{
   text-decoration: none;
   color: black;
+
 }
 .nav p a {
   color: #2c98f0;
@@ -103,6 +104,18 @@ margin-top: 20%;
   padding-right: 2%;
 }
 
+.card {
+  height: 50%;
+  width: 50%;
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+}
+
+.card img {
+  height: inherit;
+  width: inherit;
+  margin: 0 auto;
+}
+
 .cap span{
   font-size: 48px;
   color: white;
@@ -134,59 +147,41 @@ color: white;
 padding-left: 15%;
 }
 
-.cap {
-  background-color: #BF211E;
+.cap, #color1 {
+  background-color: #2274A5;
 }
-.truck {
-  background-color: gold;
+.truck, #color2 {
+  background-color: #984447;
 }
-.desktop {
-  background-color: #4472CA;
+.desktop, #color3 {
+  background-color: #E0A458;
 }
-.bot {
-  background-color: #5cb85c;
+.bot, #color4 {
+  background-color: #6D213C;
 }
-.code {
+.code, #color5 {
   background-color: darkorange;
 }
-.globe {
-  background-color: peru;
+.globe, #color6 {
+  background-color: #729EA1;
 }
 .one .square , .one .rect {
-border-bottom: 2px solid #BF211E;
+border-bottom: 2px solid #2274A5;
 }
 .two .square , .two .rect {
-border-bottom: 2px solid gold;
+border-bottom: 2px solid #984447;
 }
 .three .square , .three .rect {
-border-bottom: 2px solid #4472CA;
+border-bottom: 2px solid #E0A458;
 }
 .four .rect , .four .square {
-border-bottom: 2px solid #5cb85c;
+border-bottom: 2px solid #6D213C;
 }
 .five .rect, .five .square {
 border-bottom: 2px solid darkorange;
 }
 .six .rect , .six .square {
-border-bottom: 2px solid peru;
-}
-#color1 {
-      background-color: #BF211E;
-}
-#color2 {
-      background-color: gold;
-}
-#color3 {
-      background-color: #4472CA;
-}
-#color4 {
-      background-color: #5cb85c;
-}
-#color5 {
-      background-color: darkorange;
-}
-#color6 {
-      background-color: peru;
+border-bottom: 2px solid #729EA1;
 }
 
 #resume{
@@ -194,10 +189,31 @@ height: 800px;
 }
 #contact {
   margin-top: 10%;
+  height: 800px;
 }
 
 .activeMenuItem {
   border-bottom: 1px solid #2c98f0;
+}
+
+.nav i {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  #contact {
+    height: 100%;
+  }
+  #resume {
+    height: 100%;
+  }
 }
 /* .bar {
   width: 40%;
