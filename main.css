@@ -1,14 +1,24 @@
 body{
   margin: 0 auto;
 }
+.container.open {
+  width: 80%;
+  height: 100%;
+}
 .nav {
+  padding-top: 10%;
   float: left;
   height: 100%;
   width: 20%;
   position: fixed;
   overflow-y: scroll;
-  background: #f2f3f7;
+  background: #A38A61;
   text-align: center;
+  left: -20%;
+  transition: 1s;
+}
+.nav.open {
+  left: 0;
 }
 .nav ul {
       padding-inline-start: 0px;
@@ -29,22 +39,35 @@ body{
 }
 .nav img {
   border-radius: 100%;
-  height: 150px;
+  height: 40%;
   display: block;
   margin: 20px auto;
+  width: 60%;
 }
 .container {
   float: right;
-  height: 600px;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  /* background-color: #F9F3E8; */
 }
 #home {
-  background-image: url("https://i2.wp.com/ontariofamilycourt.ca/wp-content/uploads/2017/09/Website-Design-Background-MOBO-Media-Web-Design.png?ssl=1");
+  /* background-image: url("https://i2.wp.com/ontariofamilycourt.ca/wp-content/uploads/2017/09/Website-Design-Background-MOBO-Media-Web-Design.png?ssl=1"); */
   background-size: cover;
+  background-color: #654F42;
   height: 700px;
 }
-
+#about, #skills, #contact{
+  background-color: #E0CEB2
+}
 .description {
+  top: 70%;
+  left: 5%;
+  position: absolute;
+  color: white;
+  transition: 1.2s;
+}
+#home.open .description {
   top: 60%;
   left: 30%;
   position: absolute;
@@ -96,6 +119,7 @@ margin-top: 20%;
   margin-top: -10%;
   padding-top: 8%;
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  height: 400px;
 }
 
 .square p {
@@ -116,20 +140,36 @@ margin-top: 20%;
   margin: 0 auto;
 }
 
-.cap span{
+.open .cap span{
   font-size: 48px;
   color: white;
 padding-left: 19%;
 }
-.truck span{
+/* 25%, 15%, 17% */
+.cap span{
+  font-size: 48px;
+  color: white;
+padding-left: 25%;
+}
+.open .truck span{
   font-size: 48px;
 color: white;
 padding-left: 5%;
 }
-.desktop span{
+.truck span{
+  font-size: 48px;
+color: white;
+padding-left: 15%;
+}
+.open .desktop span{
   font-size: 48px;
 color: white;
 padding-left: 10%;
+}
+.desktop span{
+  font-size: 48px;
+color: white;
+padding-left: 17%;
 }
 .bot span{
   font-size: 48px;
@@ -148,13 +188,13 @@ padding-left: 15%;
 }
 
 .cap, #color1 {
-  background-color: #2274A5;
-}
-.truck, #color2 {
   background-color: #984447;
 }
-.desktop, #color3 {
+.truck, #color2 {
   background-color: #E0A458;
+}
+.desktop, #color3 {
+  background-color: #2274A5;
 }
 .bot, #color4 {
   background-color: #6D213C;
@@ -165,33 +205,28 @@ padding-left: 15%;
 .globe, #color6 {
   background-color: #729EA1;
 }
-.one .square , .one .rect {
-border-bottom: 2px solid #2274A5;
+.one .square {
+border-bottom: 25px solid #984447;
 }
-.two .square , .two .rect {
-border-bottom: 2px solid #984447;
+.two .square {
+border-bottom: 25px solid #E0A458;
 }
-.three .square , .three .rect {
-border-bottom: 2px solid #E0A458;
+.three .square {
+border-bottom: 25px solid #2274A5;
 }
-.four .rect , .four .square {
-border-bottom: 2px solid #6D213C;
+.one .rect {
+border-left: 20px solid #984447;
 }
-.five .rect, .five .square {
-border-bottom: 2px solid darkorange;
+.two .rect{
+border-left: 20px solid #E0A458;
 }
-.six .rect , .six .square {
-border-bottom: 2px solid #729EA1;
+.three .rect{
+border-left: 20px solid #2274A5;
 }
 
-#resume{
-height: 800px;
-}
-#contact {
+form {
   margin-top: 10%;
-  height: 800px;
 }
-
 .activeMenuItem {
   border-bottom: 1px solid #2c98f0;
 }
@@ -235,3 +270,47 @@ height: 800px;
   display: inline-block;
   margin-left: -10px;
 } */
+#hamburger-button {
+  position: fixed;
+  z-index: 1; /*so it never gets lost under something*/
+  display: inline-block;
+  vertical-align: top;
+  height:15px;
+  width:20px;
+  margin-left:2%;
+  margin-top:2%;
+}
+
+#hamburger-button:hover {
+  cursor: pointer;
+  /* changes the cursor to pointer */
+}
+
+#hamburger-button > span {
+  display: block;
+  height: 4px;
+  margin-bottom: 3px;
+  width: 44px;
+  background-color: white;
+ -webkit-transition-timing-function: linear; /* Safari and Chrome */
+transition-timing-function: linear;
+transition-duration:1s;
+}
+
+
+#hamburger-button.open > span:first-child {
+-webkit-transform: translateY(6px) rotate(45deg); /* Chrome, Safari, Opera */
+transform:translateY(6px) rotate(45deg);
+}
+
+
+#hamburger-button.open > span:nth-child(2) {
+   -webkit-transform: rotateY(90deg); /* Safari */
+    transform: rotateY(90deg);
+  /* rotates the second child on the Y AXIS ONLY 90 degrees so it disappears into a point */
+}
+
+#hamburger-button.open > span:last-child {
+ -webkit-transform: translateY(-6px) rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: translateY(-6px) rotate(-45deg);
+}
