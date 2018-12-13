@@ -298,6 +298,11 @@ form {
   }
 }
 /* media query for smaller screens ENDS here */
+.btn-download {
+  background-color: black;
+  border-color: black;
+}
+
 
 #hamburger-button {
   position: fixed;
