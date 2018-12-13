@@ -1,5 +1,9 @@
 body{
   margin: 0 auto;
+  font-family: 'Gilda Display', serif;
+}
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .container.open {
   width: 80%;
@@ -56,6 +60,7 @@ body{
   background-size: cover;
   background-color: #654F42;
   height: 700px;
+  color: black;
 }
 #about, #skills, #contact{
   background-color: #E0CEB2
@@ -64,18 +69,20 @@ body{
   top: 70%;
   left: 5%;
   position: absolute;
-  color: white;
   transition: 1.2s;
 }
+.description p{
+  font-size: 14px;
+}
+
 #home.open .description {
   top: 60%;
   left: 30%;
   position: absolute;
-  color: white;
 }
 .button a{
-  color: white;
-border: 1px solid #fff;
+  color: black;
+border: 1px solid #000;
 background: transparent !important;
 text-decoration: none;
 }
@@ -123,9 +130,21 @@ margin-top: 20%;
 }
 
 .square p {
-  font-size: 12px;
+  font-size: 16px;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.square img {
+  height: 35%;
+  width: 35%;
+  margin: 0% 33%;
+}
+
+#vfa {
+  height: 15%;
+  width: 70%;
+  margin: 0% 15%;
 }
 
 .card {
@@ -238,16 +257,48 @@ form {
 @media screen and (max-width: 600px) {
   .nav {
     display: none;
+    padding-top: 10%;
+    height: 30%;
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    background: #A38A61;
+    text-align: center;
+    top: -200px;
+    transition: 1s;
   }
-  .container {
+  .container, .container.open {
     width: 100%;
     height: 100%;
   }
+
+  #home.open .description {
+      top: 70%;
+      left: 5%;
+      position: absolute;
+      transition: 1.2s;
+  }
+
   #contact {
     height: 100%;
   }
   #resume {
     height: 100%;
+  }
+  .nav.open{
+    display: block;
+    padding-top: 10%;
+    height: 30%;
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    background: #A38A61;
+    text-align: center;
+    top: 0;
+    transition: 1s;
+  }
+  .nav.open img,p,h3 {
+    display: none;
   }
 }
 /* .bar {
@@ -291,7 +342,7 @@ form {
   height: 4px;
   margin-bottom: 3px;
   width: 44px;
-  background-color: white;
+  background-color: black;
  -webkit-transition-timing-function: linear; /* Safari and Chrome */
 transition-timing-function: linear;
 transition-duration:1s;
