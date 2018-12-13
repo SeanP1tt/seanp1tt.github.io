@@ -16,7 +16,7 @@ p {
   width: 20%;
   position: fixed;
   overflow-y: scroll;
-  background: #A38A61;
+  background: #AB8B72;
   text-align: center;
   left: -20%;
   transition: 1s;
@@ -256,16 +256,16 @@ form {
 
 @media screen and (max-width: 600px) {
   .nav {
-    display: none;
     padding-top: 10%;
     height: 30%;
     width: 100%;
     position: fixed;
     overflow-y: scroll;
-    background: #A38A61;
     text-align: center;
     top: -200px;
     transition: 1s;
+    float: none;
+    left: 0;
   }
   .container, .container.open {
     width: 100%;
@@ -286,18 +286,16 @@ form {
     height: 100%;
   }
   .nav.open{
-    display: block;
     padding-top: 10%;
     height: 30%;
     width: 100%;
     position: fixed;
     overflow-y: scroll;
-    background: #A38A61;
     text-align: center;
     top: 0;
     transition: 1s;
   }
-  .nav.open img,p,h3 {
+  .nav img, .nav p, .nav h3 {
     display: none;
   }
 }
