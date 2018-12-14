@@ -26,7 +26,7 @@ p {
     display: inline-block;
     width: 100%;
     color: white;
-    font-size: 4em;
+    font-size: 3em;
 }
 span i {
     text-align:center;
@@ -126,11 +126,11 @@ text-decoration: none;
 border-radius: 100%;
 margin: 0 auto;
 margin-top: 20%;
-width: 35%;
+width: 26%;
 padding: 3%;
 }
 .open .circle {
-  width: 45%;
+  width: 33%;
 }
 
 .rect {
@@ -168,7 +168,7 @@ padding: 3%;
   margin-top: 28%;
 }
 .container.open #wh {
-  margin-top: 0%;
+  margin-top: 15%;
 }
 
 
@@ -178,7 +178,11 @@ padding: 3%;
   margin: 25% 15% 0 15%;
 }
 #wh {
-  margin-top: 12%;
+  height: 29%;
+  margin-top: 19%;
+}
+.open #wh {
+  height: 25%;
 }
 
 .card {
@@ -287,7 +291,7 @@ form {
     display: none;
   }
   .circle, .open .circle{
-    width: 50%;
+    width: 38%;
     padding: 3%;
   }
   p {
@@ -295,6 +299,10 @@ form {
   }
 .square {
     height: 500px;
+  }
+  #hamburger-button {
+    margin-left:3%;
+    margin-top:5%;
   }
 }
 /* media query for smaller screens ENDS here */
@@ -311,8 +319,8 @@ form {
   vertical-align: top;
   height:15px;
   width:20px;
-  margin-left:2%;
-  margin-top:2%;
+  margin-left:3%;
+  margin-top:3%;
 }
 
 #hamburger-button:hover {
@@ -346,4 +354,8 @@ transform:translateY(6px) rotate(45deg);
 #hamburger-button.open > span:last-child {
  -webkit-transform: translateY(-6px) rotate(-45deg); /* Chrome, Safari, Opera */
     transform: translateY(-6px) rotate(-45deg);
+}
+
+.skills-box h5 {
+  margin-bottom: 4%;
 }
