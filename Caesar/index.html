@@ -8,10 +8,58 @@
   <body>
 
     <div class="container">
-      <h1>'Caesar Cypher Me'</h1>
-      <textarea name="textbox" rows="8" cols="80" id='encrypt'></textarea>
+      <h1>Caesar Cipher Me</h1>
+      <img src="https://jryantheaed.files.wordpress.com/2015/05/rome-caesar.jpg" alt="Caesar">
+      <h4>What is the Caesar Cipher?</h4>
+      <p>The Caesar cipher is one of the earliest known and simplest ciphers.
+        It is a type of substitution cipher in which each letter in the plaintext is 'shifted' a certain number of places down the alphabet.
+        For example, with a shift of 1, A would be replaced by B, B would become C, and so on.</p>
+      <br>
+
+      <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks active" data-tab="1">Encrypt</button>
+  <button class="tablinks" data-tab="2">Decrypt</button>
+</div>
+
+<!-- EncryptTab content -->
+<div id="encryptTab" class="tabcontent active">
+      <label for="shift">Shift</label>
+      <br>
+      <input type="text" name="shift" value="1">
+
+      <br>
+      <label for="plaintext">Text to encrypt</label>
+      <textarea name="plaintext" rows="8" cols="80" id='encrypt'></textarea>
+      <br>
+
+      <label for="encryptedText">Encrypted Text</label>
+      <textarea name="encryptedText" rows="8" cols="80" id='result'></textarea>
+      <br>
+
       <button type="button" name="submit">submit</button>
     </div>
+
+<!-- DecryptTab content -->
+    <div id="decryptTab" class="tabcontent" >
+          <label for="key">Key</label>
+          <br>
+          <input type="text" name="key" value="1">
+
+          <br>
+          <label for="cipherText">Text to encrypt</label>
+          <textarea name="cipherText" rows="8" cols="80" id='cipher'></textarea>
+          <br>
+
+          <label for="decryptedText">Encrypted Text</label>
+          <textarea name="decryptedText" rows="8" cols="80" id='decrypt'></textarea>
+          <br>
+
+          <button type="button" name="submit">submit</button>
+        </div>
+
+  </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
