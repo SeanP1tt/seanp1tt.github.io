@@ -5,6 +5,17 @@ body{
 p {
   font-family: 'IBM Plex Sans', sans-serif;
 }
+#projects{
+    flex-direction: unset;
+}
+
+.proj {
+  height: 33%;
+  width: 33%;
+  display: inline-block;
+  border: 1px solid;
+  margin: 1%;
+}
 .container.open {
   width: 80%;
   height: 100%;
@@ -60,20 +71,32 @@ span i {
 }
 .container {
   float: right;
-  height: 100%;
   width: 100%;
   transition: 1s;
-  /* background-color: #F9F3E8; */
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
 }
 #home {
   /* background-image: url("https://i2.wp.com/ontariofamilycourt.ca/wp-content/uploads/2017/09/Website-Design-Background-MOBO-Media-Web-Design.png?ssl=1"); */
   background-size: cover;
   background-color: #654F42;
-  height: 750px;
   color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
-#about, #skills, #contact{
-  background-color: #E0CEB2
+ #skills, #contact{
+  background-color: #E0CEB2;
 }
 .description {
   top: 70%;
@@ -259,10 +282,7 @@ form {
     float: none;
     left: 0;
   }
-  .container, .container.open {
-    width: 100%;
-    height: 100%;
-  }
+
 
   #home.open .description {
       top: 70%;
