@@ -12,7 +12,7 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
-import App as Xmas from './Xmas/src/App.js'
+import Xmas from './Xmas/src/App'
 
 let lastScrollY = 0;
 
