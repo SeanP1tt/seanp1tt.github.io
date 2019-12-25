@@ -4,9 +4,8 @@ function Contact(){
   return(
     <Fragment>
     <div className="container" id="contact">
+      <h1>You Don't Have to Call</h1> <h5>Contact Me</h5>
       <div className="text-box">
-        <h1>You Don't Have to Call</h1> <h5>Contact Me</h5>
-
         <div className="col-md-7 col-md-push-1">
     							<div className="row">
     								<div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated" data-animate-effect="fadeInRight">

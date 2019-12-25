@@ -12,6 +12,10 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import App as Xmas from './Xmas/src/App.js'
+
+let lastScrollY = 0;
+
 
 class App extends Component {
   constructor(props) {
@@ -28,10 +32,31 @@ class App extends Component {
             {name: 'Weather App', img: '#', description: 'A weather app that I created', link: '#' },
             {name: 'Water App', img: '#', description: 'A water app that I created', link: '#' },
             {name: 'Todo App', img: '#', description: 'A Todo app that I created', link: '#' },
-            {name: 'Meal Generator App', img: '#', description: 'A Meal Generator app that I created', link: '#' }
-          ]
+            {name: 'Meal Generator App', img: '#', description: 'A Meal Generator app', link: '#' }
+          ],
+          navScrolled: false
     };
   }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
+    const height = document.getElementById('nav').clientHeight;
+    this.setState(navHeight, height);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+
+  handleScroll(){
+    lastScrollY = window.scrollY;
+    if(lastScrollY > this.state.navHeight){
+      this.setState(navScrolled, true)
+    } else {
+      this.setState(navScrolled, false)
+    }
+  };
 
 render(){
   return (
@@ -40,15 +65,15 @@ render(){
       <Switch>
 
       <Route exact path="/">
+      <Nav/>
       <Home/>
-      <Skills skillSet={this.state.skills}/>
       <Experience/>
       <Projects projects={this.state.projects}/>
       <Contact/>
       </Route>
 
-      <Route exact path="/welcome">
-
+      <Route exact path="/xmas">
+      <Xmas></Xmas>
       </Route>
 
       <Route exact path="/guidelines">

@@ -8,11 +8,11 @@ function Experience(){
         <h1>My Experience</h1>
         <h5>My Resume</h5>
         <div className="row">
-        <div className="col-sm-12 one">
+        <div className="col-sm-12 three">
           <div className="rect">
-            <h3>Mediacom</h3>
-            <h4>Summer 2015 - Summer 2017</h4>
-            <h4>Network Security Intern</h4>
+            <h3>Gregory</h3>
+            <h4>Spring 2018 - Today</h4>
+            <h4>Software Engineer</h4>
           </div>
         </div>
       </div>
@@ -26,11 +26,11 @@ function Experience(){
         </div>
         </div>
         <div className="row">
-        <div className="col-sm-12 three">
+        <div className="col-sm-12 one">
           <div className="rect">
-            <h3>Gregory</h3>
-            <h4>Summer 2018 - Today</h4>
-            <h4>Software Engineer</h4>
+            <h3>Mediacom</h3>
+            <h4>Summer 2015 - Summer 2017</h4>
+            <h4>Network Security Intern</h4>
           </div>
         </div>
       </div>
