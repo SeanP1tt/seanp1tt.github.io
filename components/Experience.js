@@ -7,6 +7,7 @@ function Experience(){
       <div className="text-box">
         <h1>My Experience</h1>
         <h5>My Resume</h5>
+        <div className='content'>
         <div className="row">
         <div className="col-sm-12 three">
           <div className="rect">
@@ -34,7 +35,7 @@ function Experience(){
           </div>
         </div>
       </div>
-
+      </div>
           </div>
 
       </div>

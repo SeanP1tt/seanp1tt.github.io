@@ -8,11 +8,10 @@ import {
 } from "react-router-dom";
 import Nav from './components/Nav'
 import Home from './components/Home'
-import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
-import Xmas from './Xmas/src/App'
+
 
 let lastScrollY = 0;
 
@@ -29,23 +28,22 @@ class App extends Component {
           {name:'Python', value: 75, id: 'color5'}
         ],
         projects: [
-            {name: 'Weather App', img: '#', description: 'A weather app that I created', link: '#' },
-            {name: 'Water App', img: '#', description: 'A water app that I created', link: '#' },
-            {name: 'Todo App', img: '#', description: 'A Todo app that I created', link: '#' },
-            {name: 'Meal Generator App', img: '#', description: 'A Meal Generator app', link: '#' }
+            {name: 'Meal Generator App', img: 'imgs/mealapp.png', description: 'A random meal generator app to help decide what to cook', link: 'https://meal-generator.herokuapp.com/' },
+            {name: 'Todo App', img: 'imgs/todo.png', description: 'A Todo app that I created', link: 'https://todo-sp.herokuapp.com/' },
+            {name: 'Gregory', img: 'imgs/Gregory+Get+Started.png', description: 'A GRE test prep chatbot', link: 'https://www.gregory.education/' }
           ],
           navScrolled: false
     };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, true);
-    const height = document.getElementById('nav').clientHeight;
-    this.setState(navHeight, height);
+    // window.addEventListener('scroll', this.handleScroll, true);
+    // const height = document.getElementById('nav').clientHeight;
+    // this.setState(navHeight, height);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    // window.removeEventListener('scroll', this.handleScroll);
   }
 
 
@@ -73,7 +71,7 @@ render(){
       </Route>
 
       <Route exact path="/xmas">
-      <Xmas></Xmas>
+     
       </Route>
 
       <Route exact path="/guidelines">

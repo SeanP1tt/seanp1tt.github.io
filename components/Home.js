@@ -5,8 +5,8 @@ function Home(){
     <Fragment>
     <div className="container" id="home">
       <div className="description" >
-        <h1>Hey I'm Sean!</h1>
-        <p>I make websites, music, and food. If that's not enough to convince you that I'm awesome, then scroll down to learn more.</p>
+        <h1>Hey, I'm Sean!</h1>
+        <p>I'm a Web Developer and UX designer</p>
         <span className="btn btn-primary btn-download"><a href="/Resources/Sean_Pitterson_Resume_2019.pdf" download="Sean\ Pitterson\ Resume.pdf">Download CV</a></span>
       </div>
     </div>

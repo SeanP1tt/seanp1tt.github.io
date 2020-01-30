@@ -6,9 +6,9 @@ function Contact(){
     <div className="container" id="contact">
       <h1>You Don't Have to Call</h1> <h5>Contact Me</h5>
       <div className="text-box">
-        <div className="col-md-7 col-md-push-1">
+        <div className="">
     							<div className="row">
-    								<div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+    								<div className="animate-box fadeInRight animated" data-animate-effect="fadeInRight">
     									<form action="https://formspree.io/sean.pitterson@gmail.com" method="POST">
     										<div className="form-group">
     											<input type="text" className="form-control" placeholder="Name" name="name"/>
