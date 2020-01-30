@@ -58,33 +58,15 @@ class App extends Component {
 
 render(){
   return (
-<BrowserRouter>
-    <div className="App">
-      <Switch>
 
-      <Route exact path="/">
+    <div className="App">
       <Nav/>
       <Home/>
       <Experience/>
       <Projects projects={this.state.projects}/>
       <Contact/>
-      </Route>
-
-      <Route exact path="/xmas">
-     
-      </Route>
-
-      <Route exact path="/guidelines">
-
-      </Route>
-
-      <Route path="/form">
-
-      </Route>
-
-      </Switch>
     </div>
-  </BrowserRouter>
+ 
   );
 }
 
