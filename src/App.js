@@ -1,11 +1,4 @@
 import React, {Component} from 'react';
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom";
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Experience from './components/Experience'
