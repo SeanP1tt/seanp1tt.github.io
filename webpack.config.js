@@ -5,10 +5,12 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     devtool: 'source-map',
-    entry: "./main.js",
+    entry: "./src/main.js",
+    devServer: {},
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: "index_bundle.js"
+        filename: "index_bundle.js",
+        publicPath: "https://github.com/SeanP1tt/seanp1tt.github.io"
     },
     module: {
         rules: [{
@@ -58,5 +60,7 @@ module.exports = {
             template: "./index.html" //source html
         }),
         new ExtractTextPlugin({ filename: 'css/style.css' })
-    ]
+    ],
+    resolve: {},
+    optimization: {}
 }
