@@ -113,6 +113,8 @@ span i {
   background-color: #E0CEB2;
 }
 .description {
+  width: 50%;
+  text-align: center;
   position: relative;
   transition: 1.2s;
 }

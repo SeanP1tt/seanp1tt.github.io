@@ -21,8 +21,8 @@ class App extends Component {
           {name:'Python', value: 75, id: 'color5'}
         ],
         projects: [
-            {name: 'Meal Generator App', img: 'imgs/mealapp.png', description: 'A random meal generator app to help decide what to cook', link: 'https://meal-generator.herokuapp.com/' },
-            {name: 'Todo App', img: 'imgs/todo.png', description: 'A Todo app that I created', link: 'https://todo-sp.herokuapp.com/' },
+            {name: 'Recipe App', img: 'imgs/mealapp.png', description: 'Randomly generates a meal for your chosen meal of the day', link: 'https://meal-generator.herokuapp.com/' },
+            {name: 'To-do App', img: 'imgs/todo.png', description: 'A To-do list app w/ changeable themes', link: 'https://todo-sp.herokuapp.com/' },
             {name: 'Gregory', img: 'imgs/Gregory+Get+Started.png', description: 'A GRE test prep chatbot', link: 'https://www.gregory.education/' }
           ],
           navScrolled: false
