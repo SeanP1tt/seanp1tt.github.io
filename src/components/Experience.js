@@ -11,7 +11,7 @@ function Experience(){
         <div className="row">
         <div className="col-sm-12 three">
           <div className="rect">
-            <h3>Gregory</h3>
+            <h3><a href='https://www.gregory.education/'>Gregory</a></h3>
             <h4>Spring 2018 - Today</h4>
             <h4>Software Engineer</h4>
           </div>
@@ -20,7 +20,7 @@ function Experience(){
         <div className="row">
         <div className="col-sm-12 two">
           <div className="rect">
-            <h3>Wizehive</h3>
+            <h3><a href='https://www.wizehive.com/'>Wizehive</a></h3>
             <h4>Fall 2017 - Today</h4>
             <h4>Implementation and Technical Support Specialist</h4>
           </div>
@@ -29,7 +29,7 @@ function Experience(){
         <div className="row">
         <div className="col-sm-12 one">
           <div className="rect">
-            <h3>Mediacom</h3>
+            <h3><a href='https://www.mediacomcable.com/'>Mediacom</a></h3>
             <h4>Summer 2015 - Summer 2017</h4>
             <h4>Network Security Intern</h4>
           </div>
