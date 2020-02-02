@@ -14,6 +14,7 @@ function Projects(props){
         <h2>{project.name}</h2>
         <img src={project.img}/>
         <p> {project.description}</p>
+        {project.gh?<a href={project.gh}><i class="fab fa-github"></i></a>:null}
         <button className='btn btn-primary btn-send-message'> <p><a href={project.link}>Check it out here</a></p> </button>
         </div>
       ))
