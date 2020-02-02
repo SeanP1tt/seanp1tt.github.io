@@ -31,8 +31,8 @@ class App extends Component {
 
   componentDidMount() {
     // window.addEventListener('scroll', this.handleScroll, true);
-    // const height = document.getElementById('nav').clientHeight;
-    // this.setState(navHeight, height);
+    // const width = document.getElementById('nav').clientWidth;
+    // this.setState({navWidth: width});
   }
 
   componentWillUnmount() {

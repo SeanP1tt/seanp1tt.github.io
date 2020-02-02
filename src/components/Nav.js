@@ -8,6 +8,7 @@ function Nav(){
     <ul>
       <span className='left'><li className="logo"> <img src='../imgs/favicon.ico'/></li></span>
       <span className='right'>
+      <li><i class="fa fa-bars icon"></i></li>
       <li><a href="#home">Home</a></li>
       <li><a href="#resume">Resume</a></li>
       <li><a href="#projects">Projects</a></li>

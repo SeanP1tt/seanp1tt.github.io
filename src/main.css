@@ -298,8 +298,33 @@ form {
     position: fixed;
     text-align: center;
     transition: 1s;
+    overflow-y: auto;
+  }
+  .right li{
+    display: block;
+  }
+
+  .nav .right{
     float: none;
-    left: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  body{
+    text-align: center;
+  }
+
+ #contact .btn-send-message {
+    width: 100%;
+}
+  .proj{
+    display: block;
+    width: 100%;
+  }
+
+  .content .row{
+    margin-left: 0;
+    margin-right: 0;
   }
 
 
@@ -360,7 +385,7 @@ form {
 .right{
   float: right;
     margin-right: 5%;
-    width: 25%;
+    width: 40%;
 }
 .right li{
   margin: 3% 3%;
@@ -369,4 +394,5 @@ form {
   margin: 5% auto;
   color: black;
 }
+
 
