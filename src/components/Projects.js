@@ -5,8 +5,8 @@ function Projects(props){
     <Fragment>
     <div className="container" id="projects">
     <div className="text-box">
-    <h1>My Projects</h1>
-        <h5>My Resume</h5>
+    <h1>My Work</h1>
+        <h5>Projects</h5>
         <div className='content'>
     {
       props.projects.map((project, i) => (
