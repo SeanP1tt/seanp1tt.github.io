@@ -300,8 +300,6 @@ form {
     transition: 1s;
     overflow-y: auto;
   }
-  .right li{
-  }
 
   .nav .left{
     display: none;
