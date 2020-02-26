@@ -301,8 +301,11 @@ form {
     overflow-y: auto;
   }
   .right li{
-    display: block;
   }
+
+  .nav .left{
+    display: none;
+  } 
 
   .nav .right{
     float: none;
